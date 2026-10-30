@@ -1,12 +1,13 @@
 ---
-name: skill-GearUP
-description: 实现功能、修 bug、改配置、写工程脚本、评审工程方案、调整 Agent 规则时使用。按风险定范围、证据与验收。闲聊/翻译/润色/知识问答/无后续动作的只读咨询不触发；"专业点""工程思维"等泛化措辞不构成触发。
+name: discipline
+description: 工程纪律类技能。实现功能、修 bug、改配置、写工程脚本、评审工程方案、调整 Agent 规则时使用。按风险定范围、证据与验收；思考途中按需参考技能索引选用所需技能（弱绑定，不强制加载）。闲聊/翻译/润色/知识问答/无后续动作的只读咨询不触发；"专业点""工程思维"等泛化措辞不构成触发。
 ---
 
-# Skill Gear Up · 工程素养
+# Discipline · 工程纪律
 
 > 目的：以与风险相称的成本，把真正需要解决的问题做对，并留下足以核验的结果。
 > 本 Skill 是决策辅助，不是权限来源。上层规则、项目规范、工具机制已覆盖的事项，以它们为准，不另立标准。
+> 本纪律**不强制加载任何其他 Skill**：思考途中按需参考技能索引选用即可——是弱绑定，不是必经流程。
 
 ## 触发条件（按任务判断，不按口头禅判断）
 
@@ -27,10 +28,10 @@ description: 实现功能、修 bug、改配置、写工程脚本、评审工程
 ## 任务深化入口
 
 - Before starting the plan, don’t make any changes yet—first ask yourself these four questions:
-  (1) what a top professional in this field would do that the request does not yet cover; 
-  (2) the most primary source material they would start from, rather than already-digested summaries; 
-  (3) the specific methods and tools suited to the work; and 
-  (4) what independent evidence, beyond the user’s or agent’s judgment, would show the result is right. 
+  (1) what a top professional in this field would do that the request does not yet cover;
+  (2) the most primary source material they would start from, rather than already-digested summaries;
+  (3) the specific methods and tools suited to the work; and
+  (4) what independent evidence, beyond the user’s or agent’s judgment, would show the result is right.
   Then turn the request into a focused, execution-ready task brief that includes those elements without expanding its scope unnecessarily.
 
 ---
@@ -78,11 +79,11 @@ description: 实现功能、修 bug、改配置、写工程脚本、评审工程
 
 ### 尺五 · 工具为任务服务
 
-**一句话：补足真实能力缺口，而不是堆装备。**
+**一句话：补足真实能力缺口，而不是堆装备；技能按需取用，不是必经流程。**
 
 - 优先复用项目已有工具、测试、模板；只查与本任务相关的入口。
-- 上层要求的 Skill 必须遵守；其余按阶段需要选，同职能择一。
-- 匹配到名称 ≠ 读取了正文：读到适用指令、确认依赖与冲突后，才能说"采用该 Skill"。
+- 上层要求的 Skill 遵守；其余**按需**参考技能索引（SKILLS-中文索引.md）选用，同职能择一。选不到合适的，就用工程判断继续，**不为凑齐技能而停步**。
+- 匹配到名称 ≠ 读取了正文：读到适用指令、确认依赖与冲突后，才算采用该 Skill；否则只是候选。
 - 缺 Skill / 工具：不依赖它的工作继续；依赖它的步骤暂停并报告具体缺项。不虚构路径、命令、加载状态、工具结果。
 - 工具与任务错位：换工具 / 换路径 / 降级分步，并说明；不硬闯。不为加载 Skill 擅自改环境、装依赖、调权限。
 
@@ -137,7 +138,7 @@ description: 实现功能、修 bug、改配置、写工程脚本、评审工程
 ```text
 明确结果与边界
   → 按风险选择必要准备+专家式任务简报
-  → 读取适用规范和必要 Skill
+  → 按需参考技能索引与适用规范
   → 获取基线或关键证据
   → 实施最小充分方案
   → 按验收标准验证
@@ -148,7 +149,7 @@ description: 实现功能、修 bug、改配置、写工程脚本、评审工程
 
 ### 3. 规则工程专用入口
 
-**仅在编写或修改 Agent 规则、调整提示词、诊断规则失效，或复盘规则集合时，读取 [规则价值与失效诊断](SKILL_GearUp_References/rule-engineering.md)。**
+**仅在编写或修改 Agent 规则、调整提示词、诊断规则失效，或复盘规则集合时，读取 [规则价值与失效诊断](references/rule-engineering.md)。**
 
 **普通工程任务不加载该附录。一次失败不自动触发新增永久规则。**
 
